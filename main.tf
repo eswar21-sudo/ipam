@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-east-1"
+}
+
 #  Create AWS IPAM
 resource "aws_vpc_ipam" "example" {
   description = "My AWS IPAM"
