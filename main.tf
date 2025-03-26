@@ -36,7 +36,7 @@ resource "aws_vpc" "example_vpc" {
 
 
 # Enable AWS CloudWatch Metrics for IPAM
-// resource "aws_cloudwatch_metric_alarm" "ipam_usage_alert" {
+/* resource "aws_cloudwatch_metric_alarm" "ipam_usage_alert" {
   alarm_name          = "ipam-high-usage"
   comparison_operator = "GreaterThanThreshold"
   evaluation_periods  = 1
@@ -46,4 +46,4 @@ resource "aws_vpc" "example_vpc" {
   statistic           = "Minimum"
   threshold           = 1
   alarm_actions       = ["arn:aws:sns:us-east-1:123456789012:ipam-alerts"]
-} //
+} */
