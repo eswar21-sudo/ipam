@@ -30,7 +30,7 @@ resource "aws_vpc" "example_vpc" {
   ipv4_ipam_pool_id = aws_vpc_ipam_pool.example_pool.id
   cidr_block        = "30.0.0.0/16"  # Must match the allocated range
   tags = {
-    Name = "MyIPAMVPC"
+    Name = "aws"
   }
 }
 
