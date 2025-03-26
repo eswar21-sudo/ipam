@@ -21,7 +21,7 @@ resource "aws_vpc_ipam_pool" "example_pool" {
 # Allocate an IP Range to the Pool
 resource "aws_vpc_ipam_pool_cidr" "example_cidr" {
   ipam_pool_id = aws_vpc_ipam_pool.example_pool.id
-  cidr         = "10.0.0.0/16"
+  cidr         = "30.0.0.0/16"
 }
 
 
